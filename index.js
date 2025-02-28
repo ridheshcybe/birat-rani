@@ -44,6 +44,9 @@ app.get("/facilities/dryeye", (req, res) => {
 app.get("/facilities/e&t", (req, res) => {
   res.render("facilites/e&t.ejs");
 });
+app.get("/facilities/ent", (req, res) => {
+  res.render("facilites/ENT.ejs");
+});
 
 app.get("/facilities/lab", (req, res) => {
   res.render("facilites/lab.ejs");

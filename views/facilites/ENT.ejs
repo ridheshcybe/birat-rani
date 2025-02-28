@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%-include("../pages/components/head.ejs")%>
+  <link rel="stylesheet" href="/public/css/facilities.css">
+    <style>
+    
+.container {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1,
+h2 {
+  color: #004080;
+}
+.highlight {
+  font-weight: bold;
+  color: #ff6600;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li::before {
+  content: "\2714"; /* Checkmark */
+  color: green;
+  margin-right: 8px;
+}
+</style>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <%- include("../pages/components/loader.ejs")%>
+  <!-- Spinner End -->
+
+
+  <!-- Topbar Start -->
+  <%-include("../pages/components/topbar.ejs")%>
+  <!-- Topbar End -->
+
+
+  <!-- Navbar Start -->
+  <%- include("../pages/components/navbar.ejs")%>
+  <!-- Navbar End -->
+
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animated slideInDown">E&T</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb text-uppercase mb-0">
+          <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
+          <li class="breadcrumb-item"><a class="text-white" href="/facilities">Facilities</a></li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">ENT</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+
+  <!-- 404 Start -->
+  <main>
+   <div class="container">
+        <h1>Birat Rani Aakha Aspatal: The Gold Standard in ENT Care</h1>
+        <p>When it comes to exceptional <span class="highlight">Ear, Nose, and Throat (ENT)</span> treatment, <strong>Birat Rani Aakha Aspatal</strong> stands tall as a beacon of excellence, precision, and compassionate care.</p>
+        
+        <h2>State-of-the-Art ENT Facilities</h2>
+        <p>At <strong>Birat Rani Aakha Aspatal</strong>, cutting-edge medical advancements meet skilled expertise to provide <span class="highlight">seamless diagnostics, advanced surgical interventions, and holistic recovery plans</span> for a wide range of ENT conditions.</p>
+        
+        <h2>Expert ENT Specialists at Your Service</h2>
+        <p>Behind every successful recovery is a team of <strong>highly qualified ENT surgeons and specialists</strong> who deliver personalized treatment plans for conditions like <span class="highlight">sinus infections, hearing loss, voice disorders</span> and more.</p>
+        
+        <h2>Comprehensive ENT Services</h2>
+        <h3>🔹 Advanced Ear Care:</h3>
+        <ul>
+            <li>Diagnosis & treatment of hearing loss, tinnitus, and infections</li>
+            <li>Cochlear implant surgery for severe hearing impairments</li>
+            <li>Microscopic ear surgeries for long-term relief</li>
+        </ul>
+        
+        <h3>🔹 Nose & Sinus Treatments:</h3>
+        <ul>
+            <li>Endoscopic sinus surgery for chronic sinusitis</li>
+            <li>Deviated nasal septum correction for better breathing</li>
+            <li>Allergy treatments for nasal congestion and rhinitis</li>
+        </ul>
+        
+        <h3>🔹 Throat & Voice Solutions:</h3>
+        <ul>
+            <li>Tonsillectomy & adenoidectomy for chronic infections</li>
+            <li>Vocal cord therapy & surgery for speech disorders</li>
+            <li>Minimally invasive treatments for sleep apnea and snoring</li>
+        </ul>
+        
+        <h2>Why Choose Birat Rani Aakha Aspatal?</h2>
+        <ul>
+            <li><strong>Cutting-Edge Technology:</strong> World-class equipment for diagnosis and surgery</li>
+            <li><strong>Top-Rated Specialists:</strong> Experienced ENT surgeons and audiologists</li>
+            <li><strong>Patient-Centric Approach:</strong> Individualized treatment plans for optimal recovery</li>
+            <li><strong>Affordable & Accessible Care:</strong> High-quality treatment at reasonable costs</li>
+        </ul>
+        
+        <p>At <strong>Birat Rani Aakha Aspatal</strong>, we don’t just treat conditions—we restore quality of life. Whether you're dealing with <span class="highlight">hearing problems, sinus issues, or throat disorders</span>, our team is here to provide the best <strong>ENT care in Nepal</strong>.</p>
+        
+        <h2>Your health, your hearing, your voice—deserve the best!</h2>
+        <p>Visit us today and experience excellence in ENT treatment.</p>
+    </div>
+  </main>
+
+
+  <!-- Footer Start -->
+  <%- include("../pages/components/footer.ejs")%>
+  <!-- Footer End -->
+</body>
+
+</html>
