@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%-include("../pages/components/head.ejs")%>
+  <link rel="stylesheet" href="/public/css/facilities.css">
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <%- include("../pages/components/loader.ejs")%>
+  <!-- Spinner End -->
+
+
+  <!-- Topbar Start -->
+  <%-include("../pages/components/topbar.ejs")%>
+  <!-- Topbar End -->
+
+
+  <!-- Navbar Start -->
+  <%- include("../pages/components/navbar.ejs")%>
+  <!-- Navbar End -->
+
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animated slideInDown">Galucoma</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb text-uppercase mb-0">
+          <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
+          <li class="breadcrumb-item"><a class="text-white" href="/facilities">Facilities</a></li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">Galucoma</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+
+  <!-- 404 Start -->
+  <main>
+    <header class="text-center my-8">
+      <h1 class="text-4xl font-bold text-blue-600 underline">Glaucoma Services at Birat Rani Aakha Aspatal</h1>
+      <p class="text-lg text-gray-600 mt-2">A New Standard in Eye Care and Compassionate Treatment</p>
+    </header>
+
+    <section class="container mx-auto p-4 space-y-8">
+      <div class="text-center">
+        <img src="/public/img/galucoma.jpg" alt="Glaucoma Care" class="mx-auto rounded-lg shadow-lg cat-res">
+      </div>
+      <br>
+
+      <article class="space-y-6">
+        <h2 class="text-3xl font-semibold text-blue-500">Comprehensive Glaucoma Services</h2>
+        <p class="text-lg">
+          <span class="font-semibold text-blue-600">Birat Rani Aakha Aspatal</span> is setting a new standard in glaucoma care, combining advanced technology with compassionate service to combat this sight-threatening disease.
+        </p>
+
+        <ul class="list-disc pl-8 space-y-2">
+          <li>
+            <span class="font-semibold text-blue-600">State-of-the-art diagnostics:</span> Utilizing advanced tools like tonometry and Humphrey Field Analyzer for precise detection and monitoring of glaucoma.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Innovative treatments:</span> Offering cutting-edge procedures such as Nd YAG Laser iridotomy and transscleral cyclophotocoagulation, ensuring effective, tailored management for each patient.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Expert care team:</span> Led by experienced ophthalmologists who provide personalized treatment plans and ongoing support to each patient, ensuring optimal care and comfort.
+          </li>
+        </ul>
+
+        <h2 class="text-3xl font-semibold text-blue-500">Accessible and Affordable</h2>
+
+        <ul class="list-disc pl-8 space-y-2">
+          <li>
+            <span class="font-semibold text-blue-600">Transparent pricing:</span> Competitive rates ensure that high-quality glaucoma care is affordable and accessible to all, without compromising on service or results.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Community outreach:</span> Through regular screening camps and educational programs, Birat Rani Aakha Aspatal is dedicated to raising awareness and promoting early detection in underserved communities.
+          </li>
+        </ul>
+
+        <h2 class="text-3xl font-semibold text-blue-500">Preserving Vision, Enhancing Lives</h2>
+        <p class="text-lg">
+          At <span class="font-semibold text-blue-600">Birat Rani Aakha Aspatal</span>, patients receive not only cutting-edge glaucoma treatment but also a commitment to preserving vision and enhancing quality of life. Our mission is to ensure that every patient enjoys the benefits of advanced technology and compassionate care. <span class="font-bold text-blue-600">Experience the future of eye care today!</span>
+        </p>
+      </article>
+    </section>
+  </main>
+
+
+  <!-- Footer Start -->
+  <%- include("../pages/components/footer.ejs")%>
+  <!-- Footer End -->
+</body>
+
+</html>

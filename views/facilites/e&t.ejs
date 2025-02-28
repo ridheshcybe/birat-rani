@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%-include("../pages/components/head.ejs")%>
+  <link rel="stylesheet" href="/public/css/facilities.css">
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <%- include("../pages/components/loader.ejs")%>
+  <!-- Spinner End -->
+
+
+  <!-- Topbar Start -->
+  <%-include("../pages/components/topbar.ejs")%>
+  <!-- Topbar End -->
+
+
+  <!-- Navbar Start -->
+  <%- include("../pages/components/navbar.ejs")%>
+  <!-- Navbar End -->
+
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animated slideInDown">E&T</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb text-uppercase mb-0">
+          <li class="breadcrumb-item"><a class="text-white" href="/">Home</a></li>
+          <li class="breadcrumb-item"><a class="text-white" href="/facilities">Facilities</a></li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">E&T</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+
+  <!-- 404 Start -->
+  <main>
+    <header class="text-center my-8">
+      <h1 class="text-4xl font-bold text-blue-600 underline">Comprehensive ENT Care at Birat Rani Aakha Aspatal</h1>
+      <p class="text-lg text-gray-600 mt-2">Modern Treatments for Ear, Nose, and Throat Health</p>
+    </header>
+
+    <section class="container mx-auto p-4 space-y-8">
+      <div class="text-center">
+        <img src="/public/img/e&t.jpg" alt="ENT Care" class="mx-auto rounded-lg shadow-lg cat-res">
+      </div>
+      <br>
+      <article class="space-y-6">
+        <h2 class="text-3xl font-semibold text-blue-500">Cutting-Edge ENT Solutions</h2>
+        <p class="text-lg">
+          <span class="font-semibold text-blue-600">Birat Rani Aakha Aspatal</span> isn't just about eyes; it's a center for comprehensive ENT (Ear, Nose, and Throat) care, boasting the best modern treatments available!
+        </p>
+
+        <ul class="list-disc pl-8 space-y-2">
+          <li>
+            <span class="font-semibold text-blue-600">Advanced Diagnostics:</span> Utilizing state-of-the-art endoscopy and imaging for precise diagnoses of ENT conditions.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Comprehensive Services:</span> Addressing a wide range of ENT issues, from common infections to complex head and neck conditions with expert care.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Surgical Expertise:</span> Offering advanced procedures, including microscopic/endoscopic ear surgery, endoscopic sinus surgery, and treatments for head and neck tumors.
+          </li>
+        </ul>
+
+        <h2 class="text-3xl font-semibold text-blue-500">Why Choose Birat Rani Aakha Aspatal for ENT Care?</h2>
+
+        <ul class="list-disc pl-8 space-y-2">
+          <li>
+            <span class="font-semibold text-blue-600">Specialized Expertise:</span> A dedicated team of ENT specialists and surgeons providing high-quality, focused care for every patient.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Patient-Centered Approach:</span> Prioritizing patient well-being with compassionate care and a commitment to patient satisfaction.
+          </li>
+          <li>
+            <span class="font-semibold text-blue-600">Modern Facilities:</span> Equipped with the latest medical technology, providing state-of-the-art diagnostic and treatment services for all ENT conditions.
+          </li>
+        </ul>
+
+        <h2 class="text-3xl font-semibold text-blue-500">Complete ENT Care</h2>
+        <p class="text-lg">
+          At <span class="font-semibold text-blue-600">Birat Rani Aakha Aspatal</span>, we offer comprehensive ENT services, covering everything from otology and rhinology to laryngology and pediatric ENT care. Whether it's routine check-ups or complex surgeries, our expert team is here for all ages and conditions. <span class="font-bold text-blue-600">Experience the pinnacle of ENT care today!</span>
+        </p>
+      </article>
+    </section>
+  </main>
+
+
+  <!-- Footer Start -->
+  <%- include("../pages/components/footer.ejs")%>
+  <!-- Footer End -->
+</body>
+
+</html>

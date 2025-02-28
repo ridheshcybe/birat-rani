@@ -1,0 +1,64 @@
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+      <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+      <h1>Our Qualified Doctors</h1>
+    </div>
+    <div class="row g-4" id="team">
+    </div>
+  </div>
+</div>
+
+<script>
+  fetch('/api/team').then(e => e.json()).then(e => {
+    const teamDoc = document.getElementById("team");
+    e.forEach((i, index) => {
+      teamDoc.innerHTML += ` 
+<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="${(0.1 + index * 0.2)}s">
+  <div class="team-item position-relative rounded overflow-hidden">
+    <div class="overflow-hidden">
+      <img class="img-fluid" src="${i.imgUrl}" alt="${i.name}">
+    </div>
+    <div class="team-text bg-light text-center p-4">
+      <h5>${i.name}</h5>
+      <p class="text-primary">${i.department}</p>
+      <div class="team-social text-center">
+        ${i.socials.map(social => {
+        let exec = ``;
+        switch (social.type.toLowerCase()) {
+        case 'email':
+        exec += `<a class="btn btn-square" href="mailto:${social.url}">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>`
+
+        break;
+        case 'fb':
+        exec += `<a class="btn btn-square" href="${social.url}">
+          <i class="fab fa-facebook-f"></i>
+        </a>`
+        break;
+        case 'x':
+        exec += `<a class="btn btn-square" href="${social.url}">
+          <i class="fab fa-twitter"></i> </a>`
+        break;
+        case 'insta':
+        exec += `<a class="btn btn-square" href="${social.url}">
+          <i class="fab fa-instagram"> </i> </a>`
+        break;
+
+        default:
+        exec += `
+        <a class="btn btn-square" href="${social.url}">
+          <i class="fa fa-question" aria-hidden="true"> </i> </a>`
+        break;
+        }
+        return exec.toString('')
+        }).toString('')
+        }
+      </div>
+    </div>
+  </div>
+</div>`
+    })
+  })
+</script>

@@ -1,0 +1,114 @@
+[
+  {
+    "imgUrl": "/public/img/team-1.jpg",
+    "name": "Dr. X_Y",
+    "department": "MS (MUMBAI)",
+    "socials": [
+      {
+        "type": "Fb",
+        "url": "http://facebook.com"
+      },
+      {
+        "type": "X",
+        "url": "http://x.com"
+      },
+      {
+        "type": "Insta",
+        "url": "http://instagram.com"
+      },
+      {
+        "type": "Email",
+        "url": "contact@gmail.com"
+      },
+      {
+        "type": "JI",
+        "url": "https://ridhshw.netlify.app"
+      }
+    ],
+    "ReadMoreUrl": "/test"
+  },
+  {
+    "imgUrl": "/public/img/team-2.jpg",
+    "name": "Dr. X_Y",
+    "department": "MS (MUMBAI)",
+    "socials": [
+      {
+        "type": "Fb",
+        "url": "http://facebook.com"
+      },
+      {
+        "type": "X",
+        "url": "http://x.com"
+      },
+      {
+        "type": "Insta",
+        "url": "http://instagram.com"
+      },
+      {
+        "type": "Email",
+        "url": "contact@gmail.com"
+      },
+      {
+        "type": "JI",
+        "url": "https://ridhshw.netlify.app"
+      }
+    ],
+    "ReadMoreUrl": "/test"
+  },
+  {
+    "imgUrl": "/public/img/team-3.jpg",
+    "name": "Dr. X_Y",
+    "department": "MS (MUMBAI)",
+    "socials": [
+      {
+        "type": "Fb",
+        "url": "http://facebook.com"
+      },
+      {
+        "type": "X",
+        "url": "http://x.com"
+      },
+      {
+        "type": "Insta",
+        "url": "http://instagram.com"
+      },
+      {
+        "type": "Email",
+        "url": "contact@gmail.com"
+      },
+      {
+        "type": "JI",
+        "url": "https://ridhshw.netlify.app"
+      }
+    ],
+    "ReadMoreUrl": "/test"
+  },
+  {
+    "imgUrl": "/public/img/team-4.jpg",
+    "name": "Dr. X_Y",
+    "department": "MS (MUMBAI)",
+    "socials": [
+      {
+        "type": "Fb",
+        "url": "http://facebook.com"
+      },
+      {
+        "type": "X",
+        "url": "http://x.com"
+      },
+      {
+        "type": "Insta",
+        "url": "http://instagram.com"
+      },
+      {
+        "type": "Email",
+        "url": "contact@gmail.com"
+      },
+      {
+        "type": "JI",
+        "url": "https://ridhshw.netlify.app"
+      }
+    ],
+    "ReadMoreUrl": "/test"
+  }
+]
