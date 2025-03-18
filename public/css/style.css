@@ -302,10 +302,27 @@
 }
 
 /*** Team ***/
+:root {
+  --primary: #06A3DA;
+}
+
+.team-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+}
+
 .team-item img {
   position: relative;
   top: 0;
   transition: 0.5s;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .team-item:hover img {
@@ -314,18 +331,26 @@
 
 .team-item .team-text {
   position: relative;
-  height: 100px;
+  height: auto;
+  min-height: 100px;
   transition: 0.5s;
+  padding: 20px 15px;
 }
 
 .team-item:hover .team-text {
   margin-top: -60px;
-  height: 160px;
+  height: auto;
+  min-height: 160px;
 }
 
 .team-item .team-text .team-social {
   opacity: 0;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .team-item:hover .team-text .team-social {
@@ -334,14 +359,64 @@
 
 .team-item .team-social .btn {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
   color: var(--primary);
   background: #ffffff;
-  border-radius: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
 .team-item .team-social .btn:hover {
   color: #ffffff;
   background: var(--primary);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .team-item {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .team-item:hover .team-text {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-item {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-item:hover img {
+    top: -20px;
+  }
+  
+  .team-item:hover .team-text {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-item .team-social .btn {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .team-text h5 {
+    font-size: 18px;
+  }
+  
+  .team-text p {
+    font-size: 14px;
+  }
 }
 
 /*** Appointment ***/
