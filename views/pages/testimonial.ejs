@@ -4,46 +4,65 @@
       <p class="d-inline-block border rounded-pill py-1 px-4">Testimonial</p>
       <h1>What Our Patients Say!</h1>
     </div>
-    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s" id="testimonialCarousel">
-
+    <div class="swiper testimonial-swiper wow fadeInUp" data-wow-delay="0.1s">
+      <div class="swiper-wrapper" id="testimonialCarousel"></div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </div>
+
+<!-- Swiper.js CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
-  fetch('/api/testimonials').then(e => e.json()).then(e => {
-    const teamDoc = document.getElementById("testimonialCarousel");
-    e.forEach((testimonial, index) => {
-      teamDoc.innerHTML += `
-      <div class="testimonial-item text-center">
-        <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="${testimonial.profile}" style="width: 100px; height: 100px;">
-        <div class="testimonial-text rounded text-center p-4">
-          <p>${testimonial.body}</p>
-          <h5 class="mb-1">${testimonial.name}</h5>
-          <span class="fst-italic">${testimonial.proffesion}</span>
-        </div>
-      </div>
-      `
-    })
-  })
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Owl Carousel
-    jQuery('#testimonialCarousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1
+  fetch('/api/testimonials')
+    .then(response => response.json())
+    .then(data => {
+      const carousel = document.getElementById("testimonialCarousel");
+      data.forEach(testimonial => {
+        const slide = document.createElement("div");
+        slide.classList.add("swiper-slide");
+        slide.innerHTML = `
+          <div class="testimonial-item text-center">
+            <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" 
+              src="${testimonial.profile}" style="width: 100px; height: 100px;">
+            <div class="testimonial-text rounded text-center p-4">
+              <p>${testimonial.body}</p>
+              <h5 class="mb-1">${testimonial.name}</h5>
+              <span class="fst-italic">${testimonial.proffesion}</span>
+            </div>
+          </div>
+        `;
+        carousel.appendChild(slide);
+      });
+
+      // Initialize Swiper after adding slides
+      new Swiper(".testimonial-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
-        600: {
-          items: 2
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-        1000: {
-          items: 3
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        speed: 1000,
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          600: { slidesPerView: 2 },
+          1000: { slidesPerView: 3 }
         }
-      }
-    });
-  });
+      });
+    })
+    .catch(error => console.error("Error loading testimonials:", error));
 </script>
